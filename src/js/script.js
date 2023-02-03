@@ -1,23 +1,33 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', () => {
+
+	// Модальное окно
 	let modal = document.querySelector('.modal');
 	let servicesButton = document.querySelectorAll('.services__button');
+	let modalContent = document.querySelector('.modal__content');
 	let sendButton = document.querySelector('.main__button-send');
+	let modalContentForm = document.querySelector('.modal__content-form');
 
 	servicesButton.forEach((item) => {
 		item.addEventListener('click', () => {
 			modal.style.display = 'flex';
+			modalContent.style.display = 'block';
 		});
 	});
 
 	sendButton.addEventListener('click', () => {
 		modal.style.display = 'flex';
+		modalContentForm.style.display = 'block';
 	})
 
-	let modalClose = document.querySelector('.modal .modal__close');
-	modalClose.addEventListener('click', () => {
-		modal.style.display = 'none';
-	});
+	let modalClose = document.querySelectorAll('.modal__close');
+	modalClose.forEach((item) => {
+		item.addEventListener('click', () => {
+			modal.style.display = 'none';
+			modalContent.style.display = 'none';
+			modalContentForm.style.display = 'none';
+		});
+	})
 
 	// Табы
 
