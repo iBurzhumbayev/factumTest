@@ -12,12 +12,14 @@ window.addEventListener('DOMContentLoaded', () => {
 		item.addEventListener('click', () => {
 			modal.style.display = 'flex';
 			modalContent.style.display = 'block';
+			document.body.style.overflow = 'hidden';
 		});
 	});
 
 	sendButton.addEventListener('click', () => {
 		modal.style.display = 'flex';
 		modalContentForm.style.display = 'block';
+		document.body.style.overflow = 'hidden';
 	})
 
 	let modalClose = document.querySelectorAll('.modal__close');
@@ -26,8 +28,18 @@ window.addEventListener('DOMContentLoaded', () => {
 			modal.style.display = 'none';
 			modalContent.style.display = 'none';
 			modalContentForm.style.display = 'none';
+			document.body.style.overflow = 'visible';
 		});
 	})
+
+	window.addEventListener('keydown', (e) => {
+		if (e.keyCode === 27) {
+			modal.style.display = 'none';
+			modalContent.style.display = 'none';
+			modalContentForm.style.display = 'none';
+			document.body.style.overflow = 'visible';
+		}
+	});
 
 	// Табы
 
