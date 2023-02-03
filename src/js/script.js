@@ -72,108 +72,25 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// Tабы 2
-	const button = document.querySelector('.accounting__button');
-	const button_2 = document.querySelector('.accounting__button-2');
-	const button_3 = document.querySelector('.accounting__button-3');
-	const button_4 = document.querySelector('.accounting__button-4');
-	const button_5 = document.querySelector('.accounting__button-5');
-	const button_6 = document.querySelector('.accounting__button-6');
+	const buttons = document.querySelectorAll('.accounting__button');
+	const contents = document.querySelectorAll('.accounting__content');
+	const buttonsStyle = {
+		background: '#F55D3E',
+		color: '#fff',
+		border: 'none'
+	};
 
-	const content = document.querySelector('.accounting__content');
-	const content_2 = document.querySelector('.accounting__content-2');
-	const content_3 = document.querySelector('.accounting__content-3');
-	const content_4 = document.querySelector('.accounting__content-4');
-	const content_5 = document.querySelector('.accounting__content-5');
-	const content_6 = document.querySelector('.accounting__content-6');
-
-	button.addEventListener('click', () => {
-		content.style.display="block";
-		content_2.style.display="none";
-		content_3.style.display="none";
-		content_4.style.display="none";
-		content_5.style.display="none";
-		content_6.style.display="none";
-		button.style.cssText = 'background: #F55D3E; color: #fff; border: none';
-		button_2.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_3.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_4.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_5.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_6.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-	});
-
-	button_2.addEventListener('click', () => {
-		content.style.display="none";
-		content_2.style.display="block";
-		content_3.style.display="none";
-		content_4.style.display="none";
-		content_5.style.display="none";
-		content_6.style.display="none";
-		button.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_2.style.cssText = 'background: #F55D3E; color: #fff; border: none';
-		button_3.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_4.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_5.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_6.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-	});
-
-	button_3.addEventListener('click', () => {
-		content.style.display="none";
-		content_2.style.display="none";
-		content_3.style.display="block";
-		content_4.style.display="none";
-		content_5.style.display="none";
-		content_6.style.display="none";
-		button.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_2.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_3.style.cssText = 'background: #F55D3E; color: #fff; border: none';
-		button_4.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_5.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_6.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-	});
-
-	button_4.addEventListener('click', () => {
-		content.style.display="none";
-		content_2.style.display="none";
-		content_3.style.display="none";
-		content_4.style.display="block";
-		content_5.style.display="none";
-		content_6.style.display="none";
-		button.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_2.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_3.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_4.style.cssText = 'background: #F55D3E; color: #fff; border: none';
-		button_5.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_6.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-	});
-
-	button_5.addEventListener('click', () => {
-		content.style.display="none";
-		content_2.style.display="none";
-		content_3.style.display="none";
-		content_4.style.display="none";
-		content_5.style.display="block";
-		content_6.style.display="none";
-		button.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_2.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_3.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_4.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_5.style.cssText = 'background: #F55D3E; color: #fff; border: none';
-		button_6.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-	});
-
-	button_6.addEventListener('click', () => {
-		content.style.display="none";
-		content_2.style.display="none";
-		content_3.style.display="none";
-		content_4.style.display="none";
-		content_5.style.display="none";
-		content_6.style.display="block";
-		button.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_2.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_3.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_4.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_5.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
-		button_6.style.cssText = 'background: #F55D3E; color: #fff; border: none';
+	buttons.forEach((item, index) => {
+		item.addEventListener('click', () => {
+			buttons.forEach(item => {
+				item.style.cssText = 'background: transparent; color: #252525; border: 1px solid #F55D3E';
+			});
+			buttons[index].style.cssText = `background: ${buttonsStyle.background}; color: ${buttonsStyle.color}; border: ${buttonsStyle.border}`;
+			contents.forEach(item => {
+				item.style.display = 'none';
+			});
+			contents[index].style.display = 'block';
+		});
 	});
 	
 
