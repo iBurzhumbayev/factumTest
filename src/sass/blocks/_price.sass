@@ -1,0 +1,77 @@
+.price
+    padding: 120px 180px
+    &__title
+        color: $second-color
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 42px
+        margin-bottom: 32px
+    &__btn
+        background: $main-color
+        border-radius: 10px
+        font-weight: 400
+        font-size: 24px
+        color: #fff
+        border: none
+        padding: 12px 0
+        width: 48%
+        transition: all ease-in-out 0.3s
+    &__btn-2
+        background: transparent
+        border-radius: 10px
+        font-weight: 400
+        font-size: 24px
+        color: $main-color
+        border: 1px solid $main-color
+        padding: 12px 0
+        width: 48%
+        transition: all ease-in-out 0.3s
+    &__content
+        border: 1px solid $main-color
+        border-radius: 16px
+        animation: contentFade 0.3s ease-in-out
+    &__content-2
+        animation: contentFade 0.3s ease-in-out
+
+    table 
+        border-collapse: collapse
+        width: 100%
+        th
+            font-weight: 400
+            font-size: 24px
+            background: #252525
+            color: #fff
+            text-align: center
+            padding: 20px 0
+            border-bottom: 1px solid $main-color
+            &:nth-child(1)
+                border-radius: 15px 0 0 0
+                border-right: 1px solid $main-color
+            &:nth-child(2)
+                border-radius: 0 15px 0 0
+        td 
+            font-weight: 400
+            font-size: 24px
+            color: $second-color
+            padding: 12px 26px
+            &:nth-child(2n+1)
+                border-right: 1px solid $main-color
+            &:nth-child(2n)
+                text-align: right
+        tr
+            border-bottom: 1px solid $main-color
+            &:nth-last-child(1)
+                border-bottom: none
+
+@keyframes contentFade 
+    from 
+        opacity: 0
+    to 
+        opacity: 1
+                
+                
+                
+                
+                
+

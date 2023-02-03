@@ -1,0 +1,47 @@
+.modal 
+    position: fixed
+    z-index: 2
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(0, 0, 0, 0.7)
+    display: none
+    animation: contentFade 0.5s linear
+    justify-content: center
+    align-items: center
+
+
+.modal__content 
+    position: relative
+    background-color: #fefefe
+    padding: 20px
+    width: 80%
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.25)
+    border-radius: 10px
+
+
+.modal__close 
+    position: absolute
+    top: 0
+    right: 0
+    font-size: 30px
+    font-weight: bold
+    color: $second-color
+    text-decoration: none
+    padding: 10px
+    margin: 5px
+    cursor: pointer
+
+.modal__title 
+    font-size: 24px
+    font-weight: bold
+    color: $second-color
+
+
+.modal__text 
+    font-size: 16px
+    color: $second-color
+    margin-top: 20px
+

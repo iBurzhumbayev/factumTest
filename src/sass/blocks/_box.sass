@@ -1,0 +1,107 @@
+.box
+    position: relative
+    min-height: 130vh
+    background-color: $second-color
+    &__title
+        position: absolute
+        font-weight: 400
+        font-size: 48px
+        color: #FFFFFF
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        z-index: 1
+        text-align: center
+        width: 330px
+    &__question
+        font-size: 200px
+        color: $main-color
+        opacity: 0.2
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+    &__wrapper
+        position: relative
+        height: 100%
+        aspect-ratio: 1 / 1
+        margin: 0 auto
+    &__rotate
+        width: 43%
+        height: 28%
+        transform-origin: 100%
+        transform: translateY(-50%) rotate(90deg)
+        position: absolute
+        right: 50%
+        top: 50%
+        z-index: 1
+        &:nth-child(1)
+            transform: translateY(-50%) rotate(162deg)
+        &:nth-child(2)
+            transform: translateY(-50%) rotate(234deg)
+        &:nth-child(3)
+            transform: translateY(-50%) rotate(306deg)
+        &:nth-child(4)
+            transform: translateY(-50%) rotate(18deg)
+        &-circle
+            background: $main-color
+            border: 1px solid black
+            height: 100%
+            aspect-ratio: 1 / 1
+            border-radius: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            transform: rotate(-162deg)
+        &-circle2
+            transform: rotate(-234deg)
+        &-circle3
+            transform: rotate(-306deg)
+        &-circle4
+            transform: rotate(-18deg)
+        &-circle5
+            transform: rotate(-90deg)
+    
+    &__subtitle
+        font-weight: 400
+        font-size: 24px
+        color: #fff
+    &__inner
+        margin-top: 8px
+        p
+            color: #fff
+            
+
+
+    &__animation
+        border: 1px solid #ffa30dcc
+        border-radius: 50%
+        height: 100%
+        aspect-ratio: 1 / 1
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        opacity: 0
+        animation: zoom 2s linear 0.75s infinite
+        &-2
+            animation-delay: 1.25s
+        &-3
+            animation-delay: 1.75s
+        &-4
+            animation-delay: 2.25s
+
+    
+
+
+@keyframes zoom 
+    0%
+        transform: translate(-50%, -50%) scale(0.2)
+        opacity: 0
+    50% 
+        opacity: 0.9
+    100% 
+        transform: translate(-50%, -50%) scale(1)
+        opacity: 0
+
