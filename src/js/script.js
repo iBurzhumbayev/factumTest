@@ -41,6 +41,15 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
+	window.addEventListener('click', (e) => {
+		if (e.target === modal) {
+			modal.style.display = 'none';
+			modalContent.style.display = 'none';
+			modalContentForm.style.display = 'none';
+			document.body.style.overflow = 'visible';
+		}
+	});
+
 	// Табы
 
 	const btn1 = document.querySelector('.price__btn');
