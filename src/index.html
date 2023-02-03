@@ -27,15 +27,24 @@
     </header>
     <nav class="menu">
         <ul>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">Что входит в стоимость</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#price">Цены</a></li>
+            <li><a href="#box">Что входит в стоимость</a></li>
+            <li><a href="#accounting">FAQ</a></li>
+            <li><a href="#contacts">Контакты</a></li>
         </ul>
     </nav>
-    <main class="main"></main>
+    <main class="main">
+        <p class="main__title">Бухгалтерский Аутсорсинг</p>
+        <p class="main__description">
+            Оказание полного спектра бухгалтерских услуг для Вашей компании. Профессионализм, индивидуальный подход - стиль нашей работы. Мы всё сделаем за Вас!
+        </p>
+        <div class="main__wrapper">
+            <button class="main__button main__button-more">Подробнее</button>
+            <button class="main__button main__button-send">Оставить заявку</button>
+        </div>
+    </main>
     <section class="points">
         <div class="points__wrapper">
             <img src="icons/points/icon.svg" alt="Описание иконки">
@@ -50,10 +59,24 @@
             <p>Профессиональные бухгалтерские услуги для всех сфер бизнеса</p>
         </div>
     </section>
-    <section class="about">
-
+    <section class="about" id="about">
+        <img src="img/buh_msb.png" alt="">
+        <div class="about__wrapper">
+            <p class="about__title">
+                Бухгалтерские услуги для <span>малого и среднего</span> бизнеса
+            </p>
+            <p class="about__description">
+                Оказание полного спектра бухгалтерских услуг для Вашей компании. Профессионализм, индивидуальный подход - стиль нашей работы. Мы всё сделаем за Вас!
+                <br>
+                <br>
+                Опыт нашей квалифицированной команды составляет более 10 лет. Мы предоставляем своим клиентам все виды бухгалтерских услуг, необходимых для работы Вашей компании. Это могут быть как разовые услуги, так и комплексное обслуживание на основании договора.
+                <br>
+                <br>
+                С нами легко и надежно!
+            </p>
+        </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <p class="services__title">Услуги</p>
         <div class="services__wrapper">
             <div class="services__card">
@@ -79,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <p class="services__title price__title">Цены</p>
         <div class="price__wrapper">
             <button class="price__btn">Налоговое заявление и прочие услуги</button>
@@ -159,7 +182,7 @@
         </div>
             <div style="display: none; height: 500px; width: 100%; border: 1px solid #F55D3E" class="price__content-2">Контент налоговой отчености</div>
     </section>
-    <section class="box">
+    <section class="box" id="box">
         <div class="box__title">Что входит в стоимость обслуживания</div>
         <p class="box__question">?</p>
         <div class="box__wrapper">
@@ -219,7 +242,7 @@
             <div class="box__animation box__animation-4"></div>
         </div>     
     </section>
-    <section class="accounting">
+    <section class="accounting" id="accounting">
         <p class="services__title price__title">Как ведут учет наши бухгалтеры?</p>
         <div class="accounting__container">
             <div class="accounting__wrapper">
@@ -247,7 +270,7 @@
             <div class="accounting__content accounting__content-6">Контент 6</div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="contacts__container">
             <div class="contacts__wrapper">
                 <div class="contacts__title">Контакты</div>

@@ -2,15 +2,20 @@
 window.addEventListener('DOMContentLoaded', () => {
 	let modal = document.querySelector('.modal');
 	let servicesButton = document.querySelectorAll('.services__button');
+	let sendButton = document.querySelector('.main__button-send');
 
-	servicesButton.forEach(function (item) {
-		item.addEventListener('click', function () {
+	servicesButton.forEach((item) => {
+		item.addEventListener('click', () => {
 			modal.style.display = 'flex';
 		});
 	});
 
-	let modalClose = document.querySelector('.modal__close');
-	modalClose.addEventListener('click', function () {
+	sendButton.addEventListener('click', () => {
+		modal.style.display = 'flex';
+	})
+
+	let modalClose = document.querySelector('.modal .modal__close');
+	modalClose.addEventListener('click', () => {
 		modal.style.display = 'none';
 	});
 

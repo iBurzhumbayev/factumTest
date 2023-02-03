@@ -5,5 +5,38 @@
     background-repeat: no-repeat
     background-size: cover
     display: flex
-    align-items: center
+    flex-direction: column
+    justify-content: center
+    padding: 0 150px
+    &__title
+        font-weight: 400
+        font-size: 64px
+        color: #FFFFFF
+        margin-top: 125px
+    &__description
+        font-weight: 400
+        font-size: 18px
+        color: #FFFFFF
+        width: 532px
+        margin-top: 40px
+    &__wrapper
+        margin-top: 60px
+    &__button
+        width: 240px
+        height: 55px
+        border-radius: 10px
+        border: none
+        font-weight: 400
+        font-size: 20px
+        color: #FFFFFF
+        transition: 0.3s
+        &-more
+            margin-right: 12px
+            background: #F55D3E
+            &:hover
+                background: rgb(245, 93, 62, .7)
+        &-send
+            background: #252525
+            &:hover
+                background: rgb(37, 37, 37, .7)
     
