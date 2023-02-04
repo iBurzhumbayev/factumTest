@@ -10,6 +10,8 @@
             width: 100%
         li
             margin-right: 0
+        &__numbers
+            display: none
 
     .main
         height: 600px
@@ -132,6 +134,50 @@
                 margin: 0 13px
 @media (max-width: 768px)
     .modal
+        z-index: 4
+    .header
+        padding: 0 20px
+        position: fixed
+        z-index: 3
+        border-bottom: 2px solid $second-color
+        &__wrapper
+            display: none
+        img
+            width: 160px
+
+    .menu
+        z-index: 3
+        left: -100%
+        opacity: 0
+        visibility: hidden
+        height: 100vh
+        top: 0
+        width: 60%
+        padding: 0
+        padding-top: 140px
+        padding-bottom: 80px
+        position: fixed
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        transition: all .6s
+        ul
+            flex-direction: column
+            width: 65%
+        li
+            margin-bottom: 15px
+            text-transform: uppercase
+        &__active
+            left: 0
+            visibility: visible
+            opacity: 1
+        &__numbers
+            display: flex
+
+    .hamburger
+        display: flex
+
+    .modal
         &__content-form
             width: 84%
 
@@ -232,6 +278,8 @@
 
     .about
         padding: 50px 20px
+        &__title
+            font-size: 26px
 
     .price
         padding: 50px 20px

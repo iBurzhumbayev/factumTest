@@ -92,6 +92,24 @@ window.addEventListener('DOMContentLoaded', () => {
 			contents[index].style.display = 'block';
 		});
 	});
-	
+
+
+	// Меню
+
+	const menu = document.querySelector('.menu');
+    const menuItem = document.querySelectorAll('.menu li');
+    const hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger__active');
+        menu.classList.toggle('menu__active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger__active');
+            menu.classList.toggle('menu__active');
+        });
+    });
 
 });
